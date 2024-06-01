@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        h3::after{
+            content:'.pdf';
+            color: blue;
+            font-size: 12px;
+        }
+
+        h3::before{
+            content: '# ';
+            background-color: aqua;
+            color: brown;
+        }
+
+        p::first-letter{
+            font-size: 3em;
+        }
+
+        p::first-line{
+            font-style: italic;
+            font-weight: 900;
+        }
+
+        p::selection{
+            background-color: yellow;
+            color: blue;
+        }
+        
+        h3::selection{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3>Headind-1</h3>
+    <h3>Headind-2</h3>
+    <h3>Headind-3</h3>
+    <h3>Headind-4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ut eius eligendi dignissimos, sit optio modi ipsam, at libero illum quibusdam dolor temporibus accusantium quod pariatur praesentium ipsum nisi aperiam.</p>
+    <p>Earum tenetur pariatur quidem nisi voluptate provident cupiditate laboriosam voluptatibus qui ut totam accusantium veniam repellat quae incidunt, porro animi aspernatur! Qui est ex soluta molestias incidunt eligendi quas neque.</p>
+    <p>Omnis saepe unde hic ut facere id quaerat temporibus, eveniet ipsa commodi aliquid. Quas, aliquid ab nulla autem eos tempore earum voluptas repudiandae, maxime natus recusandae inventore rem molestias consequatur!</p>
+</body>
+</html>

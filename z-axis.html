@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-axis</title>
+    <style>
+        .box{
+            position: relative;
+        }
+
+        .fifty{
+            z-index: 10;
+            top: 40px;
+            left: 530px;
+        }
+
+        .woman{
+            z-index: 5;
+            top: -152px;
+            left: 600px;
+        }
+
+        .banner{
+            z-index: 1;
+            top: -360px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Z-Index</h3>
+    <div class="box fifty ">
+        <img width="150px" src="resources/Group 44.png" alt="">
+    </div>
+    <div class="box woman">
+        <img width="200px" src="resources/Rectangle 1.png" alt="">
+    </div>
+    <div class="box banner">
+        <img width="800px" src="resources/Banner Image.png" alt="">
+    </div>
+</body>
+</html>

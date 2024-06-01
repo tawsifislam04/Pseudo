@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+       h3{
+        color: red;
+        
+       }
+
+       h3:hover{
+        color: blue;
+        font-size: 30px;
+        font-weight: 900;
+        background-color: cadetblue;
+        width: 200px;
+       }
+
+       input:hover{
+        border: 3px solid yellow;
+       }
+
+       input:focus{
+        color: blue;
+        padding: 5px;
+        outline: 0;
+       }
+
+       a:visited{
+        color:blue;
+       }
+
+       li:hover{
+        font-size: 24px;
+       }
+
+       li:first-child{
+        background-color: aqua;
+        width: 100px;
+       }
+
+       li:nth-child(2n){
+        color: blue;
+       }
+
+       li:nth-child(2n+1){
+        color: brown;
+       }
+
+    </style>
+</head>
+<body>
+    <h3>What is Pseudo</h3>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <a target="_blank" href="https://www.facebook.com/">facebook</a>
+    <a target="_blank" href="https://chat.openai.com/">AI</a>
+
+    <ul>
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Biology</li>
+        <li>Math</li>
+        <li>English</li>
+        <li>Bangla</li>
+        <li>Geography</li>
+        <li>Accounting</li>
+    </ul>
+</body>
+</html>

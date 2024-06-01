@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        .relative{
+            border: 2px solid red;
+            padding: 10px;
+            width: 700px;
+        }
+
+        .box{
+            border: 2px dotted purple;
+            width: 300px;
+        }
+
+        .letter{
+            position: relative;
+            bottom: 90px;
+            left: 240px;
+        }
+
+        .absolute{
+            border: 2px solid blue;
+            padding: 10px;
+            width: 700px;
+            position: relative;
+        }
+
+        .second-pic{
+            position: absolute;
+            left: 400px;
+            top: 99px;
+        }
+
+        .div-3{
+            border: dashed 2px black;
+            width: 800px;
+            padding: 10px;
+        }
+
+        .dummy{
+            border: 3px solid darkgreen;
+            width: 250px;
+            height: 250px;
+        }
+
+        .Sticky{
+            position: sticky;
+            top: 10px;
+            left: 100px;
+        }
+
+        .another{
+            border: double salmon 2px;
+            width: 800px;
+        }
+
+        .fixed{
+            position: fixed;
+            top: 30px;
+            right: 1px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>CSS Positions</h3>
+    <p>There are 5 types of Positions in CSS</p>
+
+    <ol>
+        <p><i>Flow Related</i></p>
+        <li>Static: <small><em><b>normal.</b></em></small></li>
+        <li>Relative: <small><em><b>current position relative a koto tuku change hobe. Will not leave the current spot.</b></em></small></li>
+        <li>Absolute: <small><em><b>will lose it's own position and will move base on it's parent element or base on root.</b></em></small></li>
+        <p><i>Scroll Related</i></p>
+        <li>Sticky</li>
+        <li>Fixed</li>
+    </ol>
+    <div class="relative">
+        <h2>Relative</h2>
+        <div class="box ">
+            <img src="resources/Group 44.png" alt="">
+        </div>
+        <div class="box letter">
+            <img src="resources/Group 61.png" alt="">
+        </div>
+        <div class="box">
+            <img src="resources/Group 96.png" alt="">
+        </div>
+    </div>
+    <div class="absolute">
+        <h2>Absolute</h2>
+        <div class="box ">
+            <img src="resources/Group 44.png" alt="">
+        </div>
+        <div class="box second-pic">
+            <img src="resources/Group 61.png" alt="">
+        </div>
+        <div class="box">
+            <img src="resources/Group 96.png" alt="">
+        </div>
+
+    </div>
+     
+    <div class="div-3">
+        <div class="box Sticky">
+            <img src="resources/Group 61.png" alt="">
+        </div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+    <div class="another">
+        <div class="box fixed">
+            <img src="resources/Group 61.png" alt="">
+        </div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+
+</body>
+</html>
